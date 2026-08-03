@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #08090c;
+  --surface: #101319;
+  --surface-line: rgba(255, 255, 255, 0.08);
+  --foreground: #f5f5f2;
+  --muted: #9ca0ad;
+
+  --accent: #4f6df5;
+  --accent-soft: #8aa0ff;
+  --accent-dim: #2a3577;
+
+  --shape-amber: #f5b940;
+  --shape-coral: #ef5b4e;
+  --shape-emerald: #35b37e;
+  --shape-white: #f5f5f0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-dim: var(--accent-dim);
+  --color-shape-amber: var(--shape-amber);
+  --color-shape-coral: var(--shape-coral);
+  --color-shape-emerald: var(--shape-emerald);
+  --color-shape-white: var(--shape-white);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+* {
+  border-color: var(--surface-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Dot grid, matches the poster's faint graph-paper backdrop */
+.bg-grid {
+  background-image:
+    linear-gradient(var(--surface-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--surface-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
