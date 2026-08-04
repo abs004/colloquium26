@@ -11,7 +11,7 @@ const fadeUp = {
 
 export default function Venue() {
   return (
-    <section className="relative px-6 py-28">
+    <section className="relative px-6 py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-2 md:items-center">
         <motion.div
           initial="hidden"

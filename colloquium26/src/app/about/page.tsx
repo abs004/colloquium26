@@ -29,7 +29,7 @@ export default function AboutPage() {
         description="COLLOQUIUM is an annual event by the IEEE Computer Society Kerala Chapter, offering a unique opportunity to share insights, stay abreast of industry trends, and facilitate interactions across diverse technological domains."
       />
 
-      <section className="px-6 pb-28">
+      <section className="px-6 pb-16 sm:pb-28">
         <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-3">
           {pillars.map((p) => (
             <div

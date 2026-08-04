@@ -19,7 +19,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 pb-16">
+    <section className="relative flex min-h-[100svh] items-center justify-center overflow-x-hidden px-6 pt-28 pb-16">
       <motion.div
         variants={container}
         initial="hidden"
@@ -28,14 +28,14 @@ export default function Hero() {
       >
         <motion.p
           variants={item}
-          className="font-mono text-[11px] uppercase tracking-[0.3em] text-accent-soft"
+          className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent-soft sm:text-[11px] sm:tracking-[0.3em]"
         >
           IEEE Computer Society Kerala Chapter presents
         </motion.p>
 
         <motion.h1
           variants={item}
-          className="font-display mt-6 text-balance text-6xl font-bold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
+          className="font-display mt-6 text-balance text-5xl font-bold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
         >
           Colloquium<span className="text-accent">&apos;26</span>
         </motion.h1>
@@ -50,17 +50,17 @@ export default function Hero() {
           track industry trends, and connect across technological domains.
         </motion.p>
 
-        <motion.div variants={item} className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <motion.div variants={item} className="mt-10 flex flex-col items-center justify-center gap-3 xs:flex-row xs:gap-4">
           <a
             href={event.registerUrl}
-            className="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-105"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-105 xs:w-auto"
           >
             Register Now
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="/about"
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-white/30"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-white/30 xs:w-auto"
           >
             Learn more
           </a>
@@ -69,7 +69,7 @@ export default function Hero() {
         {/* signature drawn-loop motif, echoing the poster */}
         <motion.div
           variants={item}
-          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[140%] max-w-3xl -translate-x-1/2 -translate-y-1/2 opacity-60"
+          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[110%] max-w-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 sm:w-[140%]"
         >
           <DrawnLoop className="w-full" />
         </motion.div>

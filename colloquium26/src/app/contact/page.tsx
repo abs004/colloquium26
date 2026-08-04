@@ -13,7 +13,7 @@ export default function ContactPage() {
         description="Questions about Colloquium'26 — sponsorship, speaking, or general queries? Reach out."
       />
 
-      <section className="px-6 pb-28">
+      <section className="px-6 pb-16 sm:pb-28">
         <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-8">
             <h3 className="font-display text-lg font-bold">Reach out directly</h3>

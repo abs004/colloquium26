@@ -15,7 +15,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 px-6 py-16">
+    <footer className="relative border-t border-white/10 px-6 py-12 sm:py-16">
       <div className="mx-auto max-w-6xl">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

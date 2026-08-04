@@ -12,7 +12,7 @@ export default function SchedulePage() {
         description="A rough shape of the day — final timings will be confirmed closer to the event."
       />
 
-      <section className="px-6 pb-28">
+      <section className="px-6 pb-16 sm:pb-28">
         <div className="mx-auto max-w-2xl">
           <ol className="relative border-l border-white/10 pl-8">
             {schedule.map((item, i) => (
