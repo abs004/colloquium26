@@ -25,7 +25,7 @@ export default function PageHeader({
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="font-display mt-4 text-5xl font-bold sm:text-6xl"
+        className="font-display mt-4 text-4xl font-bold break-words sm:text-5xl md:text-6xl"
       >
         {title}
       </motion.h1>

@@ -1,17 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { socials } from "@/lib/data";
 import { FacebookIcon, InstagramIcon, XIcon, LinkedinIcon } from "./icons/SocialIcons";
 
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/schedule", label: "Schedule" },
-  { href: "/#speakers", label: "Speakers" },
-  { href: "/contact", label: "Contact" },
-];
+
 
 export default function Footer() {
   return (
@@ -33,7 +26,11 @@ export default function Footer() {
               COLLOQUIUM&apos;26 — For Professionals. By Professionals. Where ideas spark innovation, conversations
               create opportunities, and the future of technology comes to life.
             </p>
-            <div className="mt-6 flex items-center gap-4">
+          </div>
+
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Connect with us</p>
+            <div className="mt-4 flex items-center gap-4">
               <a href={socials.facebook} aria-label="Facebook" className="text-muted hover:text-foreground">
                 <FacebookIcon size={16} />
               </a>
@@ -48,24 +45,9 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          <div>
-            <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Navigate</p>
-            <nav className="mt-4 flex flex-col gap-2.5">
-              {links.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-sm text-muted transition-colors hover:text-foreground"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
         </div>
 
-        <p className="mt-14 border-t border-white/10 pt-6 text-xs text-muted">
+        <p className="mt-14 border-t border-white/10 pt-6 text-xs text-muted text-center">
           Copyright © 2026 IEEE Computer Society Kerala Chapter. All rights reserved.
         </p>
       </div>

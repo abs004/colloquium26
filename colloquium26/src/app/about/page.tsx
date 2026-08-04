@@ -12,10 +12,10 @@ export default function AboutPage() {
       />
 
       <section className="px-6 pb-16 sm:pb-28">
-        <div className="mx-auto max-w-3xl space-y-12 text-muted">
+        <div className="mx-auto max-w-3xl space-y-12 text-muted text-center">
           <div>
             <h3 className="font-display text-2xl font-bold text-foreground">Why Attend?</h3>
-            <ul className="mt-4 list-disc pl-5 space-y-2">
+            <ul className="mt-4 list-disc list-inside space-y-2">
               <li>Gain practical insights into the latest developments in Agentic AI.</li>
               <li>Learn directly from experienced industry professionals.</li>
               <li>Expand your professional network with experts and peers.</li>
