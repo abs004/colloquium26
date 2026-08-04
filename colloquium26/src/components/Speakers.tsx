@@ -38,7 +38,7 @@ export default function Speakers() {
           </p>
         </motion.div>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5">
           {speakers.map((speaker, i) => (
             <motion.div
               key={i}

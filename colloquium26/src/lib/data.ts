@@ -22,7 +22,7 @@ export type Speaker = {
 export const speakers: Speaker[] = [
   { name: "Anup G Prasad", role: "Lead AI Engineer, Equipo Health Inc", initials: "AP", accent: "blue", image: "/images/assets/speakers/anup-g-prasad.png" },
   { name: "Sameen Sardar", role: "CMO & Co-Founder, Tenztro Pvt Ltd", initials: "SS", accent: "coral" },
-  { name: "Kiran S Raj", role: "Lead Data Scientist, Qualys", initials: "KR", accent: "emerald" },
+  { name: "Kiran S Raj", role: "Lead Data Scientist, Qualys", initials: "KR", accent: "emerald", image: "/images/assets/speakers/kiran-s-raj.jpeg" },
   { name: "Fincy M Yousuff", role: "Vice President, Growth, Equipo Health Inc", initials: "FY", accent: "amber", image: "/images/assets/speakers/fincy.jpeg" },
   { name: "Gregory Kurien", role: "Junior Software Engineer, Lektik Consulting", initials: "GK", accent: "coral", image: "/images/assets/speakers/gregory-kurien.jpeg" },
   { name: "Neeraj V Ipe", role: "Team Lead, Accenture Song", initials: "NI", accent: "emerald", image: "/images/assets/speakers/neeraj-v-ipe.png" },
