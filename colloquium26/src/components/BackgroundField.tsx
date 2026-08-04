@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 
 type Shape = {
   kind: "diamond" | "half" | "dot";
@@ -71,6 +71,25 @@ function ShapeGlyph({ shape }: { shape: Shape }) {
 export default function BackgroundField() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden bg-background bg-grid">
+      <style>{`
+        @keyframes drift {
+          0%   { transform: translate(0, 0); }
+          25%  { transform: translate(8px, -14px); }
+          50%  { transform: translate(0, 0); }
+          75%  { transform: translate(-6px, 10px); }
+          100% { transform: translate(0, 0); }
+        }
+        .shape-drift {
+          animation: drift ease-in-out infinite;
+          will-change: transform;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .shape-drift {
+            animation: none !important;
+          }
+        }
+      `}</style>
+
       {/* radial fade so the grid recedes toward the edges */}
       <div
         className="absolute inset-0"
@@ -80,23 +99,18 @@ export default function BackgroundField() {
         }}
       />
       {shapes.map((shape, i) => (
-        <motion.div
+        <div
           key={i}
-          className="absolute opacity-70"
-          style={{ top: shape.top, left: shape.left }}
-          animate={{
-            y: [0, -14, 0, 10, 0],
-            x: [0, 8, 0, -6, 0],
-          }}
-          transition={{
-            duration: shape.duration,
-            delay: shape.delay,
-            repeat: Infinity,
-            ease: "easeInOut",
+          className="absolute opacity-70 shape-drift"
+          style={{ 
+            top: shape.top, 
+            left: shape.left,
+            animationDuration: `${shape.duration}s`,
+            animationDelay: `${shape.delay}s`,
           }}
         >
           <ShapeGlyph shape={shape} />
-        </motion.div>
+        </div>
       ))}
     </div>
   );
