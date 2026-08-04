@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Calendar, Clock } from "lucide-react";
 import { event } from "@/lib/data";
@@ -65,10 +66,11 @@ export default function Venue() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10"
         >
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80"
             alt="Conference venue"
-            className="h-full w-full object-cover"
+            fill
+            className="object-cover"
           />
           <div
             className="absolute inset-0"
