@@ -13,24 +13,7 @@ export default function AboutPage() {
 
       <section className="px-6 pb-16 sm:pb-28">
         <div className="mx-auto max-w-3xl space-y-12 text-muted text-center">
-          <div>
-            <h3 className="font-display text-2xl font-bold text-foreground">Why Attend?</h3>
-            <ul className="mt-4 list-disc list-inside space-y-2">
-              <li>Gain practical insights into the latest developments in Agentic AI.</li>
-              <li>Learn directly from experienced industry professionals.</li>
-              <li>Expand your professional network with experts and peers.</li>
-              <li>Explore emerging trends shaping the future of AI.</li>
-              <li>Be part of conversations that inspire innovation and collaboration.</li>
-            </ul>
-          </div>
 
-          <div>
-            <h3 className="font-display text-2xl font-bold text-foreground">About COLLOQUIUM</h3>
-            <p className="mt-4">
-              COLLOQUIUM is the flagship professional initiative of the Graduate Student Activities Committee of the IEEE Computer Society Kerala Chapter, created to bridge the gap between industry and emerging technologies. Every edition focuses on a technology shaping tomorrow, bringing together experts and professionals to exchange ideas, inspire innovation, and encourage meaningful collaboration.
-            </p>
-          </div>
-          
           <div>
             <h3 className="font-display text-2xl font-bold text-foreground">COLLOQUIUM&apos;25</h3>
             <p className="mt-4">

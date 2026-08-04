@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { event } from "@/lib/data";
@@ -18,13 +19,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 isolate z-[100] border-b border-white/10 bg-background">
+    <header className="fixed top-0 inset-x-0 isolate z-[100] pt-4">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mt-4 flex items-center justify-between rounded-full border border-white/10 bg-white/[0.03] px-4 py-2.5 backdrop-blur-xl">
+        <div className="flex items-center justify-between rounded-full border border-white/10 bg-white/[0.03] px-4 py-2.5 backdrop-blur-xl">
           <Link href="/" className="flex items-center gap-2">
-            <span className="font-display text-sm font-bold tracking-tight text-foreground">
-              COLLOQUIUM<span className="text-accent">26</span>
-            </span>
+            <Image src="/images/assets/logo/logo-cropped.png" alt="Colloquium'26 Logo" width={600} height={165} className="h-10 w-auto object-contain sm:h-12" quality={100} />
           </Link>
 
           <nav className="hidden md:flex items-center gap-7">

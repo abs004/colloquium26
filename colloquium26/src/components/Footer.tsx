@@ -1,8 +1,9 @@
 "use client";
 
 import { ArrowUp } from "lucide-react";
+import Image from "next/image";
 import { socials } from "@/lib/data";
-import { FacebookIcon, InstagramIcon, XIcon, LinkedinIcon } from "./icons/SocialIcons";
+import { InstagramIcon, XIcon, LinkedinIcon } from "./icons/SocialIcons";
 
 
 
@@ -19,9 +20,7 @@ export default function Footer() {
 
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr]">
           <div>
-            <span className="font-display text-lg font-bold">
-              COLLOQUIUM<span className="text-accent">26</span>
-            </span>
+            <Image src="/images/assets/logo/logo-cropped.png" alt="Colloquium'26 Logo" width={800} height={220} className="h-14 w-auto object-contain sm:h-16" quality={100} />
             <p className="mt-4 max-w-md text-sm text-muted">
               COLLOQUIUM&apos;26 — For Professionals. By Professionals. Where ideas spark innovation, conversations
               create opportunities, and the future of technology comes to life.
@@ -31,9 +30,7 @@ export default function Footer() {
           <div>
             <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Connect with us</p>
             <div className="mt-4 flex items-center gap-4">
-              <a href={socials.facebook} aria-label="Facebook" className="text-muted hover:text-foreground">
-                <FacebookIcon size={16} />
-              </a>
+
               <a href={socials.instagram} aria-label="Instagram" className="text-muted hover:text-foreground">
                 <InstagramIcon size={16} />
               </a>

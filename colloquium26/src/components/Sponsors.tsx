@@ -14,9 +14,9 @@ export default function Sponsors() {
           viewport={{ once: true }}
           className="text-center font-mono text-[11px] uppercase tracking-[0.3em] text-muted"
         >
-          In Association With
+          In Collaboration With
         </motion.p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-16">
           {sponsors.map((s, i) => (
             <motion.div
               key={i}
@@ -24,10 +24,10 @@ export default function Sponsors() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className="flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] px-8 py-5 font-mono text-xs uppercase tracking-widest text-muted"
+              className="flex items-center justify-center p-2 sm:p-4 font-mono text-xs uppercase tracking-widest text-muted"
             >
               {s.logo ? (
-                <Image src={s.logo} alt={s.name} width={160} height={40} className="h-10 w-auto object-contain" />
+                <Image src={s.logo} alt={s.name} width={240} height={80} className="h-12 w-auto object-contain sm:h-16" />
               ) : (
                 s.name
               )}
