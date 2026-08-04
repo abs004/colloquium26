@@ -151,7 +151,7 @@ export default function VineTimeline({ items }: { items: ScheduleItem[] }) {
   const half       = `calc(50% - ${CX + BRANCH_GAP}px)`; // card column width
 
   return (
-    <div ref={sectionRef} className="relative mx-auto w-full max-w-4xl px-3 sm:px-6">
+    <div ref={sectionRef} className="relative mx-auto w-full max-w-4xl overflow-x-clip px-3 sm:px-6">
 
       {/* ── Container with measured total height ── */}
       <div className="relative w-full" style={{ height: totalH }}>
