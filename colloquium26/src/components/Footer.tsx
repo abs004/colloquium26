@@ -30,10 +30,8 @@ export default function Footer() {
               COLLOQUIUM<span className="text-accent">26</span>
             </span>
             <p className="mt-4 max-w-md text-sm text-muted">
-              IEEE Computer Society (CS) drives progress in computer science and
-              engineering by fostering collaboration among professionals worldwide.
-              Through conferences, publications, and diverse programs, we empower
-              leaders to drive innovation and make a positive global impact.
+              COLLOQUIUM&apos;26 — For Professionals. By Professionals. Where ideas spark innovation, conversations
+              create opportunities, and the future of technology comes to life.
             </p>
             <div className="mt-6 flex items-center gap-4">
               <a href={socials.facebook} aria-label="Facebook" className="text-muted hover:text-foreground">

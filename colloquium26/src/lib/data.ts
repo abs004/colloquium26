@@ -1,11 +1,13 @@
 export const event = {
   edition: "Colloquium'26",
-  tagline: "For professionals, by professionals",
-  date: "TBA, 2026",
-  time: "09:00 AM – 02:00 PM",
-  venue: "Venue to be announced",
+  tagline: "The Future is Agentic",
+  description:
+    "COLLOQUIUM'26 explores the next chapter of Artificial Intelligence through the lens of Agentic AI — autonomous AI systems, human-AI collaboration, AI security, responsible innovation, and intelligent workflows. Expert talks, panel discussions, networking, and a hands-on workshop.",
+  date: "Saturday, 15 August 2026",
+  time: "9:30 AM – 1:30 PM",
+  venue: "EQUIPO Business Solutions Private Limited, Thiruvananthapuram",
   venueBlurb:
-    "This year's venue is still being finalized. Colloquium'26 will once again bring together IEEE and non-IEEE professionals for a day of talks, networking, and hands-on exposure to emerging technology.",
+    "Join us at EQUIPO Business Solutions Private Limited, Thiruvananthapuram, for an engaging day of expert sessions, panels, and networking focused on the future of Agentic AI.",
   registerUrl: "#register",
 };
 
@@ -18,27 +20,46 @@ export type Speaker = {
 };
 
 export const speakers: Speaker[] = [
-  { name: "Anup G Prasad", role: "TITLE HERE", initials: "AP", accent: "blue", image: "/images/assets/speakers/anup-g-prasad.png" },
-  { name: "Fincy", role: "TITLE HERE", initials: "F", accent: "amber", image: "/images/assets/speakers/fincy.jpeg" },
-  { name: "Gregory Kurien", role: "TITLE HERE", initials: "GK", accent: "coral", image: "/images/assets/speakers/gregory-kurien.jpeg" },
-  { name: "Neeraj V Ipe", role: "TITLE HERE", initials: "NI", accent: "emerald", image: "/images/assets/speakers/neeraj-v-ipe.png" },
-  { name: "Sai Pramod V V N S", role: "TITLE HERE", initials: "SP", accent: "blue", image: "/images/assets/speakers/sai-pramod.jpeg" },
-  { name: "Sneha C", role: "TITLE HERE", initials: "SC", accent: "amber", image: "/images/assets/speakers/sneha-c.jpeg" },
+  { name: "Anup G Prasad", role: "Lead AI Engineer, Equipo Health Inc", initials: "AP", accent: "blue", image: "/images/assets/speakers/anup-g-prasad.png" },
+  { name: "Sameen Sardar", role: "CMO & Co-Founder, Tenztro Pvt Ltd", initials: "SS", accent: "coral" },
+  { name: "Kiran S Raj", role: "Lead Data Scientist, Qualys", initials: "KR", accent: "emerald" },
+  { name: "Fincy M Yousuff", role: "Vice President, Growth, Equipo Health Inc", initials: "FY", accent: "amber", image: "/images/assets/speakers/fincy.jpeg" },
+  { name: "Gregory Kurien", role: "Junior Software Engineer, Lektik Consulting", initials: "GK", accent: "coral", image: "/images/assets/speakers/gregory-kurien.jpeg" },
+  { name: "Neeraj V Ipe", role: "Team Lead, Accenture Song", initials: "NI", accent: "emerald", image: "/images/assets/speakers/neeraj-v-ipe.png" },
+  { name: "Sai Pramod V V N S", role: "Software Engineer, Verteil", initials: "SP", accent: "blue", image: "/images/assets/speakers/sai-pramod.jpeg" },
+  { name: "Sneha C", role: "Software Engineer, Verteil", initials: "SC", accent: "amber", image: "/images/assets/speakers/sneha-c.jpeg" },
 ];
 
 export type ScheduleItem = {
   time: string;
   title: string;
   detail: string;
+  speaker?: string;
+  role?: string;
+  panelists?: { name: string; role: string }[];
 };
 
 export const schedule: ScheduleItem[] = [
-  { time: "09:00 AM", title: "Registration & Check-in", detail: "Badge pickup and networking coffee" },
-  { time: "09:30 AM", title: "Opening Remarks", detail: "IEEE Computer Society Kerala Chapter" },
-  { time: "10:00 AM", title: "Keynote Session", detail: "Speaker to be announced" },
-  { time: "11:15 AM", title: "Panel Discussion", detail: "Topic to be announced" },
-  { time: "12:30 PM", title: "Lunch & Networking", detail: "Open floor for connections" },
-  { time: "01:30 PM", title: "Closing Session", detail: "Awards and closing remarks" },
+  { time: "8:30 AM", title: "Registration", detail: "Badge pickup and networking" },
+  { time: "9:30 AM", title: "Inauguration", detail: "Opening ceremony" },
+  { time: "9:50 AM", title: "Tea Break", detail: "Short refreshment break" },
+  { time: "10:00 AM", title: "Expert Session", detail: "\"The Autonomous Workforce: Redefining Human-AI Collaboration\"", speaker: "Anup G Prasad", role: "Lead AI Engineer, Equipo Health Inc" },
+  { time: "10:45 AM", title: "Networking Session", detail: "Interactive networking", speaker: "Sameen Sardar", role: "CMO & Co-Founder, Tenztro Pvt Ltd" },
+  { time: "11:00 AM", title: "Workshop", detail: "\"Agentic Workflows and Orchestration\"", speaker: "Kiran S Raj", role: "Lead Data Scientist, Qualys" },
+  { 
+    time: "12:00 PM", 
+    title: "Panel Discussion", 
+    detail: "\"Sustainability in the Age of AI\"", 
+    panelists: [
+      { name: "Gregory Kurien (Moderator)", role: "Junior Software Engineer, Lektik Consulting" },
+      { name: "Neeraj V Ipe", role: "Team Lead, Accenture Song" },
+      { name: "Sai Pramod V V N S", role: "Software Engineer, Verteil" },
+      { name: "Sneha C", role: "Software Engineer, Verteil" },
+      { name: "Fincy M Yousuff", role: "Vice President, Growth, Equipo Health Inc" }
+    ]
+  },
+  { time: "1:00 PM", title: "Closing Ceremony + Group Photo", detail: "Event wrap-up" },
+  { time: "1:30 PM", title: "Lunch", detail: "Networking lunch" }
 ];
 
 export const sponsors: string[] = ["SPONSOR", "SPONSOR", "SPONSOR", "SPONSOR"];

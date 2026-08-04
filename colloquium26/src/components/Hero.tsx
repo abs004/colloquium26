@@ -45,9 +45,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p variants={item} className="mx-auto mt-8 max-w-xl text-balance text-base text-muted">
-          An annual event by the IEEE Computer Society Kerala Chapter — a premier
-          networking platform for IEEE and non-IEEE professionals to share insights,
-          track industry trends, and connect across technological domains.
+          {event.description}
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-col items-center justify-center gap-3 xs:flex-row xs:gap-4">

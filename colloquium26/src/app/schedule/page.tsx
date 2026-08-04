@@ -25,6 +25,24 @@ export default function SchedulePage() {
                   {item.title}
                 </h3>
                 <p className="mt-1 text-sm text-muted">{item.detail}</p>
+                
+                {item.speaker && (
+                  <div className="mt-3">
+                    <p className="text-sm font-semibold text-foreground">{item.speaker}</p>
+                    <p className="text-xs text-muted">{item.role}</p>
+                  </div>
+                )}
+                
+                {item.panelists && (
+                  <ul className="mt-3 space-y-2 border-l-2 border-white/10 pl-3">
+                    {item.panelists.map((p, idx) => (
+                      <li key={idx}>
+                        <p className="text-sm font-semibold text-foreground">{p.name}</p>
+                        <p className="text-xs text-muted">{p.role}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ol>

@@ -35,7 +35,6 @@ export default function Speakers() {
           </h2>
           <p className="mt-4 text-muted">
             Renowned experts and academics shaping the future of technology.
-            Full speaker lineup for Colloquium&apos;26 coming soon.
           </p>
         </motion.div>
 
