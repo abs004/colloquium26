@@ -57,6 +57,7 @@ export default function Speakers() {
                     fill
                     sizes="(min-width: 640px) 33vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={{ objectPosition: speaker.imagePosition || "center" }}
                   />
                 ) : (
                   <div
