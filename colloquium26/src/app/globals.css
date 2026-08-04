@@ -61,6 +61,24 @@ body {
   background-size: 40px 40px;
 }
 
+/* Ambient background shape drift — pure CSS so it runs on the compositor
+   thread and doesn't stutter/restart under main-thread throttling during
+   scroll on mobile (the failure mode a JS rAF-driven loop is prone to). */
+@keyframes drift-shape {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(8px, -14px); }
+  50% { transform: translate(0, 0); }
+  75% { transform: translate(-6px, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+.drift-shape {
+  animation-name: drift-shape;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
 .text-balance {
   text-wrap: balance;
 }

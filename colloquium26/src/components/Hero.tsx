@@ -64,10 +64,12 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* signature drawn-loop motif, echoing the poster */}
+        {/* signature drawn-loop motif, echoing the poster — kept faint and
+            shifted toward the heading so it doesn't sit on top of the
+            paragraph text and hurt readability */}
         <motion.div
           variants={item}
-          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[110%] max-w-3xl -translate-x-1/2 -translate-y-1/2 opacity-60 sm:w-[140%]"
+          className="pointer-events-none absolute left-1/2 top-[38%] -z-10 w-[110%] max-w-3xl -translate-x-1/2 -translate-y-1/2 opacity-30 sm:w-[140%]"
         >
           <DrawnLoop className="w-full" />
         </motion.div>
