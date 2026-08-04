@@ -27,7 +27,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="flex flex-col md:items-end justify-end md:pr-12 md:pb-4">
             <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Connect with us</p>
             <div className="mt-4 flex items-center gap-4">
 

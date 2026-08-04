@@ -35,9 +35,13 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="font-display mt-6 text-balance text-5xl font-bold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
+          className="relative font-display mt-6 text-balance text-5xl font-bold leading-[0.95] tracking-tight sm:text-7xl md:text-8xl"
         >
           Colloquium<span className="text-accent">&apos;26</span>
+          
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[110%] max-w-3xl -translate-x-1/2 -translate-y-1/2 opacity-30 sm:w-[140%]">
+            <DrawnLoop className="w-full" />
+          </div>
         </motion.h1>
 
         <motion.p variants={item} className="mt-3 font-mono text-xs uppercase tracking-[0.25em] text-muted">
@@ -64,15 +68,7 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* signature drawn-loop motif, echoing the poster — kept faint and
-            shifted toward the heading so it doesn't sit on top of the
-            paragraph text and hurt readability */}
-        <motion.div
-          variants={item}
-          className="pointer-events-none absolute left-1/2 top-[38%] -z-10 w-[110%] max-w-3xl -translate-x-1/2 -translate-y-1/2 opacity-30 sm:w-[140%]"
-        >
-          <DrawnLoop className="w-full" />
-        </motion.div>
+
       </motion.div>
 
       <motion.div
