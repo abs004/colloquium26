@@ -12,7 +12,7 @@ const fadeUp = {
 
 export default function Venue() {
   return (
-    <section className="relative px-6 py-20 sm:py-28">
+    <section className="relative isolate px-6 py-20 sm:py-28">
       {/* subtle mask to reduce background shape interference on mobile */}
       <div 
         className="pointer-events-none absolute inset-0 -z-10 bg-background/80 backdrop-blur-[4px] md:hidden"

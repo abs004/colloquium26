@@ -12,7 +12,7 @@ export default function PageHeader({
   description?: string;
 }) {
   return (
-    <div className="mx-auto max-w-3xl px-6 pt-32 pb-12 text-center sm:pt-40 sm:pb-16">
+    <div className="relative isolate mx-auto max-w-3xl px-6 pt-32 pb-12 text-center sm:pt-40 sm:pb-16">
       <motion.p
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

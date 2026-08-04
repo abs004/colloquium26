@@ -18,7 +18,7 @@ const fadeUp = {
 
 export default function Speakers() {
   return (
-    <section id="speakers" className="relative px-6 py-20 sm:py-28">
+    <section id="speakers" className="relative isolate px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial="hidden"

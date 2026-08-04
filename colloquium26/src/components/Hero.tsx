@@ -19,7 +19,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[100svh] items-center justify-center overflow-x-hidden px-6 pt-28 pb-16">
+    <section className="relative isolate flex min-h-[100svh] items-center justify-center overflow-x-hidden px-6 pt-28 pb-16">
       <motion.div
         variants={container}
         initial="hidden"

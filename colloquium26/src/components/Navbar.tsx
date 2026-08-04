@@ -18,7 +18,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50">
+    <header className="fixed top-0 inset-x-0 isolate z-[100]">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mt-4 flex items-center justify-between rounded-full border border-white/10 bg-white/[0.03] px-4 py-2.5 backdrop-blur-xl">
           <Link href="/" className="flex items-center gap-2">

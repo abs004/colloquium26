@@ -5,7 +5,7 @@ import { sponsors } from "@/lib/data";
 
 export default function Sponsors() {
   return (
-    <section className="relative px-6 py-14 sm:py-20">
+    <section className="relative isolate px-6 py-14 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <motion.p
           initial={{ opacity: 0 }}
