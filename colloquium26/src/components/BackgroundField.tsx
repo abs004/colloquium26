@@ -66,16 +66,7 @@ function ShapeGlyph({ shape }: { shape: Shape }) {
 
 export default function BackgroundField() {
   return (
-    <div
-      className="fixed inset-0 -z-10 overflow-hidden bg-background bg-grid"
-      style={{
-        transform: "translateZ(0)",
-        WebkitTransform: "translateZ(0)",
-        backfaceVisibility: "hidden",
-        WebkitBackfaceVisibility: "hidden",
-        willChange: "transform",
-      }}
-    >
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-background bg-grid">
       {/* radial fade so the grid recedes toward the edges */}
       <div
         className="absolute inset-0"
