@@ -66,7 +66,7 @@ export const schedule: ScheduleItem[] = [
 export type Sponsor = { name: string; logo?: string };
 export const sponsors: Sponsor[] = [
   { name: "GDG Cloud Kochi", logo: "/images/assets/sponsors/gdg-cloud-kochi.png" },
-  { name: "Sponsor Two" },
+  { name: "Equipo", logo: "/images/assets/sponsors/equipo-logo.png" },
 ];
 
 export const socials = {
