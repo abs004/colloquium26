@@ -72,14 +72,9 @@ body {
 
 .drift-shape {
   will-change: transform;
-}
-
-@media (min-width: 640px) {
-  .drift-shape {
-    animation-name: drift-shape;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
+  animation-name: drift-shape;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .text-balance {
