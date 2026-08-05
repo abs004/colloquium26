@@ -1,6 +1,6 @@
 export default function BackgroundField() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-background bg-grid">
+    <div className="absolute inset-0 -z-10 overflow-hidden bg-background bg-grid">
       {/* radial fade so the grid recedes toward the edges */}
       <div
         className="absolute inset-0"
