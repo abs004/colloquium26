@@ -35,11 +35,11 @@ export const metadata: Metadata = {
   },
   manifest: "/favicons/site.webmanifest",
   openGraph: {
-    images: ["/images/assets/logo/logo-cropped.png"],
+    images: ["/images/assets/logo/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/assets/logo/logo-cropped.png"],
+    images: ["/images/assets/logo/opengraph-image.png"],
   },
 };
 
