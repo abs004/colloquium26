@@ -87,12 +87,12 @@ export default function BackgroundField() {
           );
         })
       )}
-      {/* radial fade so the grid recedes toward the edges */}
+      {/* radial fade so the grid recedes toward the edges of the screen */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="fixed inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 20%, transparent 0%, var(--color-background) 85%)",
+            "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 20%, var(--color-background) 100%)",
         }}
       />
     </div>
