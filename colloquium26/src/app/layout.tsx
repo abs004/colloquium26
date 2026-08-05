@@ -25,6 +25,22 @@ export const metadata: Metadata = {
   title: "Colloquium'26 | IEEE Computer Society Kerala Chapter",
   description:
     "Colloquium is an annual event by the IEEE Computer Society Kerala Chapter, a premier networking platform for IEEE and non-IEEE professionals across technological domains.",
+  icons: {
+    icon: [
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: "/favicons/favicon.ico",
+    apple: "/favicons/apple-touch-icon.png",
+  },
+  manifest: "/favicons/site.webmanifest",
+  openGraph: {
+    images: ["/images/assets/logo/logo-cropped.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/assets/logo/logo-cropped.png"],
+  },
 };
 
 export default function RootLayout({
