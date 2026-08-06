@@ -76,7 +76,7 @@ export default function Venue() {
           className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10"
         >
           <Image
-            src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80"
+            src="/images/assets/venue/venue.jpeg"
             alt="Conference venue"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

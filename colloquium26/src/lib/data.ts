@@ -75,3 +75,16 @@ export const socials = {
   twitter: "https://x.com/ieeecsks?s=20",
   linkedin: "https://www.linkedin.com/company/ieeecsks/",
 };
+
+export type ContactPerson = {
+  name: string;
+  position: string;
+  phone: string;
+  email: string;
+  image: string;
+};
+
+export const contacts: ContactPerson[] = [
+  { name: "TBD", position: "TBD", phone: "TBD", email: "TBD", image: "/images/assets/contact/chair.png" },
+  { name: "TBD", position: "TBD", phone: "TBD", email: "TBD", image: "/images/assets/contact/sr.png" },
+];
